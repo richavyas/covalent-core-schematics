@@ -12,7 +12,7 @@ export function addCoreDepsAndFiles(_options: ISchema): Rule {
         `~${covalentCoreVersion}`
       ),
     (host: Tree) => {
-      host.visit((filePath: any) => console.log(filePath));
+      host.visit((filePath: any) => console.log(filePath)); //TODO: just for debugging
       return host;
     },
     mergeWith(url("./files"))
