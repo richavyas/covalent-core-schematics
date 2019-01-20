@@ -13,7 +13,26 @@ schematics --help
 
 ### Unit Testing
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
+```bash
+npm run test
+```
+
+will run the unit tests, using Jasmine as a runner and test framework.
+
+### Local Testing
+
+1. Run schematics from schematics project dir
+```bash
+schematics .:ng-add
+```
+
+2. Run schematics on some other angular project
+```bash
+ng new myapp
+cd myapp
+npm link $PATH_TO_SCHEMATIC_PROJECT
+ng g covalent-core-schematics:ng-add
+```
 
 ### Publishing
 
