@@ -1,6 +1,6 @@
 {
   "name": "covalent-core-schematics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Covalent core schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
